@@ -1,4 +1,4 @@
-import 'package:dart_leetcode/dart_leetcode.dart';
+import 'package:dart_leetcode/task/twoSum_01.dart';
 
 void main() {
   final solution = Solution();
