@@ -1,6 +1,5 @@
-import 'package:dart_leetcode/task/twoSum_01.dart';
+import 'package:dart_leetcode/task/containsDuplicate_217.dart';
 
 void main() {
-  final solution = Solution();
-  print(solution.twoSum([2, 7, 11, 15], 9));
+  print(containsDuplicate([1, 2, 3, 1]));
 }
