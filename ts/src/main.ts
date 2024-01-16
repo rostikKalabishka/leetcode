@@ -1,7 +1,7 @@
 import "./style.css";
 import typescriptLogo from "./typescript.svg";
 import viteLogo from "/vite.svg";
-import { setupCounter } from "./counter.ts";
+
 import { search } from "./algorithms/binarySearch.ts";
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
@@ -20,10 +20,6 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     </p>
   </div>
 `;
-// console.log(twoSum([2, 7, 11, 15], 9));
-// console.log(containsDuplicate([1, 2, 3, 1]));
 
 console.log(search([-1, 0, 3, 5, 9, 12], 9));
 console.log(search([-1, 0, 3, 5, 9, 12], -2));
-
-setupCounter(document.querySelector<HTMLButtonElement>("#counter")!);
