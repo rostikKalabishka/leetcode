@@ -1,12 +1,30 @@
+// function findDuplicate(nums: number[]): number {
+//   let set = new Set();
+//   for (let i = 0; i < nums.length; i++) {
+//     if (set.has(nums[i])) {
+//       return nums[i];
+//     } else {
+//       set.add(nums[i]);
+//     }
+//   }
+//   return 0;
+// }
+
+//two pointers
 function findDuplicate(nums: number[]): number {
-  let set = new Set();
-  for (let i = 0; i < nums.length; i++) {
-    if (set.has(nums[i])) {
-      return nums[i];
-    } else {
-      set.add(nums[i]);
+  nums.sort((a, b) => a - b);
+
+  let slowPointer = 0;
+  let fastPointer = 1;
+
+  while (fastPointer < nums.length) {
+    if (nums[slowPointer] === nums[fastPointer]) {
+      return nums[slowPointer];
     }
+    slowPointer++;
+    fastPointer++;
   }
+
   return 0;
 }
 
